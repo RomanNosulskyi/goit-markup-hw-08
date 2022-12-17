@@ -56,14 +56,6 @@
   height: 24px;
   margin-left: 10px;
 }
-.form-mailing p {
-  margin-top: 12px;
-  margin-bottom: 20px;
-  font-weight: 700;
-  line-height: calc(16 / 14);
-  text-transform: uppercase;
-  color: white;
-}
 .mailing-thumb {
   display: flex;
   align-items: center;
@@ -149,8 +141,7 @@
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   outline: none;
-  transition: border 250ms $timing-function,
-    box-shadow 250ms $timing-function;
+  transition: border 250ms $timing-function, box-shadow 250ms $timing-function;
 
   &:focus {
     border-color: $accent-text-color;
@@ -173,8 +164,7 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   outline: none;
 
-  transition: border 250ms $timing-function,
-    box-shadow 250ms $timing-function;
+  transition: border 250ms $timing-function, box-shadow 250ms $timing-function;
 
   &:focus {
     border-color: $accent-text-color;

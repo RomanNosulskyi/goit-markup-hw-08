@@ -39,6 +39,66 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="menu-button" 
+          aria-expanded="false"
+          data-menu-button>
+          <svg class="auth-nav__phone" 
+            width="40" 
+            height="40"
+            aria-label="Переключатель мобильного меню">
+            <use class="menu-button__icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
+            <use class="menu-button__icon-menu" href="./images/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+        <!-- Меню мобільне -->
+            <div class="menu-mobile" data-menu>
+            <div class="menu-mobile__navigation">
+
+              <ul class="site-nav-mobile">
+            <li class="site-nav-mobile__item"><a href="" class="site-nav__current site-nav__link">Студія</a></li>
+            <li class="site-nav-mobile__item">
+              <a href="./portfolio.html" class="site-nav__link">Портфоліо</a>
+            </li>
+            <li class="site-nav-mobile__item"><a href="" class="site-nav__link">Контакти</a></li>
+              </ul>
+            </div>
+                
+             <div class="menu-mobile__contacts">
+            <ul class="auth-nav-mobile">
+               <li class="auth-nav-mobile__item">
+              <a class="auth-nav-mobile__tel" href="tel:+380961111111">
+                <svg class="" width="10" height="16">
+                  <use href=""></use>
+                </svg>
+                +380961111111</a
+              >
+            </li>
+            <li class="auth-nav-mobile__item">
+              <div>
+                <a class="auth-nav-mobile__link" href="mailto:info@devstudio.com">
+                  <svg class="auth-nav-mobile__mail" width="16" height="12">
+                    <use href=""></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </div>
+            </li>         
+          
+            </ul>
+            </div>
+            <div class="menu-mobile__social-menu">
+
+              <ul class="menu-mobile__social-list">
+                <li class="menu-mobile__item"><a class="menu-mobile__social-links" href="">Instagram</a></li>
+                
+                <li class="menu-mobile__item"><a class="menu-mobile__social-links" href="">Twitter</a></li>
+                
+                <li class="menu-mobile__item"><a class="menu-mobile__social-links" href="">Facebook</a></li>
+                
+                <li class="menu-mobile__item"><a class="menu-mobile__social-links" href="">LinkedIn</a></li>                              
+              </ul>
+
+              
         <ul class="auth-nav">
           <li class="auth-nav__item">
             <a
@@ -185,10 +245,10 @@
 
       <section class="section our-team">
         <div class="container team">
-          <h2 class="section-title">Наша команда</h2>
+          <h2 class="team__section-title">Наша команда</h2>
           <ul class="our-team__workers">
             <li class="our-team__team-item">
-              <img src="./images/photo1.jpg" alt="manigor" width="270" />
+              <img src="./images/photo1.jpg" alt="manigor" width="100%" />
               <h3 class="our-team__name">Ігор Дем'яненко</h3>
               <p class="our-team__type-work">Product Designer</p>
 
@@ -225,7 +285,7 @@
               </ul>
             </li>
             <li class="our-team__team-item">
-              <img src="./images/photo2.jpg" alt="womanolga" width="270" />
+              <img src="./images/photo2.jpg" alt="womanolga" width="100%" />
               <h3 class="our-team__name">Ольга Рєпіна</h3>
               <p class="our-team__type-work">Frontend Developer</p>
 
@@ -262,7 +322,7 @@
               </ul>
             </li>
             <li class="our-team__team-item">
-              <img src="./images/photo3.jpg" alt="manmykola" width="270" />
+              <img src="./images/photo3.jpg" alt="manmykola" width="100%" />
               <h3 class="our-team__name">Микола Тарасов</h3>
               <p class="our-team__type-work">Marketing</p>
 
@@ -299,7 +359,7 @@
               </ul>
             </li>
             <li class="our-team__team-item">
-              <img src="./images/photo4.jpg" alt="manmykola" width="270" />
+              <img src="./images/photo4.jpg" alt="manmykola" width="100%" />
               <h3 class="our-team__name">Михайло Єрмаков</h3>
               <p class="our-team__type-work">UI Designer</p>
 

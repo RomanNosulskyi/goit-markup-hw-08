@@ -13,11 +13,21 @@
   padding-top: 200px;
   text-align: center;
 }
-.hero-title {
+.hero__hero-title {
   color: $primary-bg-color;
-
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
+  @media screen and (max-width: 767px) {
+    font-size: 26px;
+    margin-bottom: 30px;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    line-height: 1.36;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 26px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+  }
 }

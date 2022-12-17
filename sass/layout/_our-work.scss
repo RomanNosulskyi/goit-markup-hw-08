@@ -1,11 +1,19 @@
 .our-work {
-  padding-top: 0px;
-  @media screen and (max-widht: 767px) {
+  @media screen and (max-width: 767px) {
     display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 94px 0;
   }
 }
 
 .our-work__we-doing-list {
+  display: flex;
   padding-left: 0px;
   justify-content: space-between;
   margin: 0;
@@ -18,6 +26,7 @@
   position: relative;
 }
 .our-work__wedoing-description {
+  display: flex;
   position: absolute;
   bottom: 0;
   align-items: center;
@@ -33,5 +42,5 @@
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #fff;
 }
