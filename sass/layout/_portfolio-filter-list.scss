@@ -1,0 +1,18 @@
+.portfolio__filter-menu {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  margin: 0;
+}
+
+.portfolio__filter-list:not(:last-child) {
+  margin-right: 8px;
+}
+.portfolio__main-portfolio {
+  display: block;
+}
+
+.card {
+  text-decoration: none;
+  display: block;
+}

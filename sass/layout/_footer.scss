@@ -1,0 +1,140 @@
+.page-footer {
+  background-color: #2f303a;
+  padding-top: 48px;
+  padding-bottom: 28px;
+}
+.footer {
+  align-items: baseline;
+}
+.page-footer__logo-web {
+  color: $accent-text-color;
+}
+.page-footer__logo-web2 {
+  color: white;
+}
+.page-footer__logo {
+  text-decoration: none;
+
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  margin-bottom: 20px;
+}
+.page-footer__address {
+  margin-right: 70px;
+}
+.page-footer__address-town {
+  color: $primary-bg-color;
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+  transition: color 250ms $timing-function;
+  &:hover,
+  &:focus {
+    color: $accent-text-color;
+  }
+}
+.page-footer__address-mail,
+.page-footer__address-tel {
+  transition: color 250ms $timing-function;
+  color: $title-text-color;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  &:hover,
+  &:focus {
+    color: $accent-text-color;
+  }
+}
+.page-footer__link {
+  margin-bottom: 9px;
+  display: block;
+}
+.join-footer {
+  margin-right: 93px;
+}
+.join-footer__addition-list {
+}
+
+.addition {
+  margin-right: 640px;
+}
+.join-footer__add {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: $primary-bg-color;
+}
+.join-footer__addition-item {
+  margin-right: 10px;
+}
+.join-footer__addition-icon {
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #3f404a;
+
+  justify-content: center;
+  align-items: center;
+  transition: background 250ms $timing-function;
+  &:hover {
+    background-color: $accent-text-color;
+  }
+}
+.icon-add {
+  justify-content: center;
+  align-items: center;
+
+  fill: #ffffff;
+}
+.form-mailing__p {
+  margin-top: 12px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+  color: white;
+}
+.form-mailing__mailing-thumb {
+  align-items: center;
+}
+.form-btn {
+  width: 200px;
+}
+.form-mailing__field-mailing {
+  display: inline-block;
+  position: relative;
+  margin-right: 12px;
+}
+.form-mailing__field-mailing input:focus + label {
+  transform: translate(-70px, -50%);
+}
+.form-mailing__field-mailing input {
+  transition: transform 250ms $timing-function;
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  color: $title-text-color;
+  background-color: inherit;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  outline: transparent;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+.form-mailing__field-mailing label {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  transition: transform 250ms $timing-function;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  color: $title-text-color;
+}
