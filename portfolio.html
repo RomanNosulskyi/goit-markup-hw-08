@@ -17,55 +17,114 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="container page-header__nav">
-        <nav class="page-header__nav-studio">
-          <a href="" class="page-header__logo" lang="en"
-            ><span class="page-header__logo-web">Web</span>
-            <span class="page-header__logo-studio">Studio</span>
-          </a>
-          <ul class="site-nav list">
-            <li class="item site-nav__item">
-              <a href="./index.html" class="link page-header__link"
-                >Студія</a
-              >
+    <!-- НАВИГАЦИЯ САЙТУ -->
+    <div class="container  page-header__container">
+      <a href="./index.html" lang="en" class="logo page-header__logo"><span class="logo--accent">Web</span>Studio</a>
+
+      <div class="box page-header__box">
+        <nav class="nav page-header__nav">
+          <ul class="nav__link">
+            <li class="nav__item">
+              <a href="./index.html" class="nav__studio">Студія</a>
             </li>
-            <li class="site-nav__item">
-              <a href="./portfolio.html" class="link page-header__link page-header__active-page"
-                >Портфоліо</a
-              >
+            <li class="nav__item">
+              <a href="./portfolio.html" class="nav__portfolio current">Портфоліо</a>
             </li>
-            <li class="site-nav__item">
-              <a href="" class="link page-header__link">Контакти</a>
+            <li class="nav__item">
+              <a href="#" class="nav__contacts">Контакти</a>
             </li>
           </ul>
         </nav>
-        <ul class="auth-nav">
-          <li class="auth-nav__item">
-            <a
-              href="mailto:info@devstidio.com"
-              class="auth-nav__contact-info link"
-            >
-              <svg class="auth-nav__contacts-icon icon-email">
-                <use href="./images/symbol-defs.svg#icon-email"></use>
-              </svg>
+        <!--КОНТАКТИ-->
+        <ul class="page-header__address-list firm-address__list">
+          <li class="page-header__address-item firm-address__item">
+            <a href="mailto:info@devstudio.com" lang="en" class="page-header-address__link firm-address__link">
+              <div class="envelope">
+                <svg class="address-icon">
+                  <use href="./images/symbol-defs.svg#icon-email"></use>
+                </svg>
+              </div>
+
               info@devstudio.com
             </a>
           </li>
-          <li class="auth-nav__item">
-            <a href="tel:+3809611111" class="auth-nav__contact-info link"
-              ><svg
-                class="auth-nav__contacts-icon icon-phone"
-                width="10"
-                height="16"
-              >
-                <use href="./images/symbol-defs.svg#icon-telephone"></use>
-              </svg>
+          <li class="page-header__address-item firm-address__item">
+            <a href="tel:+380961111111" class="page-header-address__link firm-address__link">
+              <div class="smartphone">
+                <svg class="address-icon">
+                  <use href="./images/symbol-defs.svg#icon-telephone"></use>
+                </svg>
+              </div>
               +38 096 111 11 11
             </a>
           </li>
         </ul>
       </div>
-    </header>
+
+
+
+
+      <button type="button" class="menu-button page-header__menu-button js-open-menu" aria-expanded="false"
+        aria-controls="menu-container">
+        <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+          <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
+        </svg>
+      </button>
+
+      <div class="menu-container  page-header__menu-container js-menu-container" id="mobile-menu">
+          <div class="mobile-container__modal">
+            <button class="menu-button menu-button--toggle page-header__menu-button js-close-menu">
+              <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+                <use class="icon-close" href="./images/symbol-defs.svg#icon-close"></use>
+              </svg>
+            </button>
+            <div class="page-header__menu-box">
+              <nav class="mobile-nav page-header__mobile-nav">
+                <ul class="mobile-nav__link">
+                  <li class="mobile-nav__item">
+                    <a href="./index.html" class="nav__studio">Студія</a>
+                  </li>
+                  <li class="mobile-nav__item">
+                    <a href="./portfolio.html" class="nav__portfolio">Портфоліо</a>
+                  </li>
+                  <li class="mobile-nav__item">
+                    <a href="#" class="nav__contacts">Контакти</a>
+                  </li>
+                </ul>
+              </nav>
+              <!--КОНТАКТИ-->
+              <ul class="mobile-address__list">
+                <li class="mobile-address__item">
+                  <a href="mailto:info@devstudio.com" lang="en" class="mobile-address__link--mail">info@devstudio.com</a>
+                </li>
+                <li class="mobile-address__item">
+                  <a href="tel:+380961111111" class="mobile-address__link--tel">38 096 111 11 11</a>
+                </li>
+              </ul>
+              <ul class="mobile-socials__list">
+                <li class="mobile-socials__item">
+                  <a href="#" class="mobile-socials__link">Instagram
+                  </a>
+                </li>
+                <li class="mobile-socials__item">
+                  <a href="#" class="mobile-socials__link">Twitter
+                  </a>
+                </li>
+                <li class="mobile-socials__item">
+                  <a href="#" class="mobile-socials__link">Facebook
+                  </a>
+                </li>
+                <li class="mobile-socials__item">
+                  <a href="#" class="mobile-socials__link">LinkedIn
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </div>
+
+    </div>
+  </header>
 
     <main>
       <section class="section portfolio">
@@ -93,11 +152,27 @@
             <li class="portfolio__project-set">
               <a class="portfolio__card" href="">
                 <div class="portfolio__wrapper">
-                  <img
-                    src="./images/website.jpg"
-                    alt="website-tehnocrack"
-                    width="370"
-                  />
+                  <picture>
+              <source srcset="
+                ./images/portfolio/tehnohreak354.webp 354w,
+                ./images/portfolio/tehnohreak370.webp 370w,
+                ./images/portfolio/tehnohreak450.webp 450w,
+                    ./images/portfolio/tehnohreak354@2x.webp 708w,
+                    ./images/portfolio/tehnohreak370@2x.webp 740w,
+                    ./images/portfolio/tehnohreak450@2x.webp 900w" 
+                    type="image/webp"
+                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, (max-width: 480px) 100vw" />
+
+              <img class="image" srcset="
+                ./images/portfolio/tehnohreak354.jpg 354w,
+                ./images/portfolio/tehnohreak370.jpg 370w,
+                ./images/portfolio/tehnohreak450.jpg 450w,
+                    ./images/portfolio/tehnohreak354@2x.jpg 708w,
+                    ./images/portfolio/tehnohreak370@2x.jpg 740w,
+                    ./images/portfolio/tehnohreak450@2x.jpg 900w"  
+                    src="./img/portfolio/tehnohreak354.jpg" alt="Веб-сайт"
+                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, (max-width: 480px) 100vw" />
+            </picture>
                   <div class="portfolio__card-description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -113,11 +188,27 @@
             <li class="portfolio__project-set">
               <a class="portfolio__card" href="">
                 <div class="portfolio__wrapper">
-                  <img
-                    src="./images/poster-new-orlean.jpg"
-                    alt="poster new orlean vs golden star"
-                    width="370"
-                  />
+            <picture>
+              <source srcset="
+                ./images/portfolio/poster354.webp 354w,
+                ./images/portfolio/poster370.webp 370w,
+                ./images/portfolio/poster450.webp 450w,
+                    ./images/portfolio/poster354@2x.webp 708w,
+                    ./images/portfolio/poster370@2x.webp 740w,
+                    ./images/portfolio/poster450@2x.webp 900w" 
+                    type="image/webp"
+                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, (max-width: 480px) 100vw" />
+
+              <img class="image" srcset="
+                ./images/portfolio/poster354.jpg 354w,
+                ./images/portfolio/poster370.jpg 370w,
+                ./images/portfolio/poster450.jpg 450w,
+                    ./images/portfolio/poster354@2x.jpg 708w,
+                    ./images/portfolio/poster370@2x.jpg 740w,
+                    ./images/portfolio/poster450@2x.jpg 900w"  
+                    src="./img/portfolio/poster354.jpg" alt="Веб-сайт"
+                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, (max-width: 480px) 100vw" />
+            </picture>
                   <div class="portfolio__card-description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -135,11 +226,27 @@
             <li class="portfolio__project-set">
               <a class="portfolio__card" href="">
                 <div class="portfolio__wrapper">
-                  <img
-                    src="./images/restrant-sea-food.jpg"
-                    alt="restrant sea food"
-                    width="370"
-                  />
+                  <picture>
+              <source srcset="
+                ./images/portfolio/seafood354.webp 354w,
+                ./images/portfolio/seafood370.webp 370w,
+                ./images/portfolio/seafood450.webp 450w,
+                    ./images/portfolio/seafood354@2x.webp 708w,
+                    ./images/portfolio/seafood370@2x.webp 740w,
+                    ./images/portfolio/seafood450@2x.webp 900w" 
+                    type="image/webp"
+                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, (max-width: 480px) 100vw" />
+
+              <img class="image" srcset="
+                ./images/portfolio/seafood354.jpg 354w,
+                ./images/portfolio/seafood370.jpg 370w,
+                ./images/portfolio/seafood450.jpg 450w,
+                    ./images/portfolio/seafood354@2x.jpg 708w,
+                    ./images/portfolio/seafood370@2x.jpg 740w,
+                    ./images/portfolio/seafood450@2x.jpg 900w"  
+                    src="./img/portfolio/seafood354.jpg" alt="Веб-сайт"
+                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, (max-width: 480px) 100vw" />
+            </picture>
                   <div class="portfolio__card-description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -155,7 +262,27 @@
             <li class="portfolio__project-set">
               <a class="portfolio__card" href="">
                 <div class="portfolio__wrapper">
-                  <img src="./images/project-prime.jpg" alt=" project prime" />
+                   <picture>
+              <source srcset="
+                ./images/portfolio/prime354.webp 354w,
+                ./images/portfolio/prime370.webp 370w,
+                ./images/portfolio/prime450.webp 450w,
+                    ./images/portfolio/prime354@2x.webp 708w,
+                    ./images/portfolio/prime370@2x.webp 740w,
+                    ./images/portfolio/prime450@2x.webp 900w" 
+                    type="image/webp"
+                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, (max-width: 480px) 100vw" />
+
+              <img class="image" srcset="
+                ./images/portfolio/prime354.jpg 354w,
+                ./images/portfolio/prime370.jpg 370w,
+                ./images/portfolio/prime450.jpg 450w,
+                    ./images/portfolio/prime354@2x.jpg 708w,
+                    ./images/portfolio/prime370@2x.jpg 740w,
+                    ./images/portfolio/prime450@2x.jpg 900w"  
+                    src="./img/portfolio/prime354.jpg" alt="Веб-сайт"
+                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, (max-width: 480px) 100vw" />
+            </picture>
                   <div class="portfolio__card-description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -171,11 +298,27 @@
             <li class="portfolio__project-set">
               <a class="portfolio__card" href="">
                 <div class="portfolio__wrapper">
-                  <img
-                    src="./images/project-boxes.jpg"
-                    alt="project boxes"
-                    width="370"
-                  />
+                  <picture>
+              <source srcset="
+                ./images/portfolio/boxes354.webp 354w,
+                ./images/portfolio/boxes370.webp 370w,
+                ./images/portfolio/boxes450.webp 450w,
+                    ./images/portfolio/boxes354@2x.webp 708w,
+                    ./images/portfolio/boxes370@2x.webp 740w,
+                    ./images/portfolio/boxes450@2x.webp 900w" 
+                    type="image/webp"
+                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, (max-width: 480px) 100vw" />
+
+              <img class="image" srcset="
+                ./images/portfolio/boxes354.jpg 354w,
+                ./images/portfolio/boxes370.jpg 370w,
+                ./images/portfolio/boxes450.jpg 450w,
+                    ./images/portfolio/boxes354@2x.jpg 708w,
+                    ./images/portfolio/boxes370@2x.jpg 740w,
+                    ./images/portfolio/boxes450@2x.jpg 900w"  
+                    src="./img/portfolio/boxes354.jpg" alt="Веб-сайт"
+                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, (max-width: 480px) 100vw" />
+            </picture>
                   <div class="portfolio__card-description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -191,10 +334,27 @@
             <li class="portfolio__project-set">
               <a class="portfolio__card" href="">
                 <div class="portfolio__wrapper">
-                  <img
-                    src="./images/website-inspiration-no.jpg"
-                    alt="website inspiration has no borders"
-                  />
+                  <picture>
+              <source srcset="
+                ./images/portfolio/borders354.webp 354w,
+                ./images/portfolio/borders370.webp 370w,
+                ./images/portfolio/borders450.webp 450w,
+                    ./images/portfolio/borders354@2x.webp 708w,
+                    ./images/portfolio/borders370@2x.webp 740w,
+                    ./images/portfolio/borders450@2x.webp 900w" 
+                    type="image/webp"
+                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, (max-width: 480px) 100vw" />
+
+              <img class="image" srcset="
+                ./images/portfolio/borders354.jpg 354w,
+                ./images/portfolio/borders370.jpg 370w,
+                ./images/portfolio/borders450.jpg 450w,
+                    ./images/portfolio/borders354@2x.jpg 708w,
+                    ./images/portfolio/borders370@2x.jpg 740w,
+                    ./images/portfolio/borders450@2x.jpg 900w"  
+                    src="./img/portfolio/borders354.jpg" alt="Веб-сайт"
+                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, (max-width: 480px) 100vw" />
+            </picture>
                   <div class="portfolio__card-description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -212,11 +372,27 @@
             <li class="portfolio__project-set">
               <a class="portfolio__card" href="">
                 <div class="portfolio__wrapper">
-                  <img
-                    src="./images/design-limited-edition.jpg"
-                    alt="design limited edition"
-                    width="370"
-                  />
+                   <picture>
+              <source srcset="
+                ./images/portfolio/limited354.webp 354w,
+                ./images/portfolio/limited370.webp 370w,
+                ./images/portfolio/limited450.webp 450w,
+                    ./images/portfolio/limited354@2x.webp 708w,
+                    ./images/portfolio/limited370@2x.webp 740w,
+                    ./images/portfolio/limited450@2x.webp 900w" 
+                    type="image/webp"
+                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, (max-width: 480px) 100vw" />
+
+              <img class="image" srcset="
+                ./images/portfolio/limited354.jpg 354w,
+                ./images/portfolio/limited370.jpg 370w,
+                ./images/portfolio/limited450.jpg 450w,
+                    ./images/portfolio/limited354@2x.jpg 708w,
+                    ./images/portfolio/limited370@2x.jpg 740w,
+                    ./images/portfolio/limited450@2x.jpg 900w"  
+                    src="./img/portfolio/limited354.jpg" alt="Веб-сайт"
+                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, (max-width: 480px) 100vw" />
+            </picture>
                   <div class="portfolio__card-description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -234,11 +410,27 @@
             <li class="portfolio__project-set">
               <a class="portfolio__card" href="">
                 <div class="portfolio__wrapper">
-                  <img
-                    src="./images/project-lab.jpg"
-                    alt="project lab"
-                    width="370"
-                  />
+                   <picture>
+              <source srcset="
+                ./images/portfolio/lab354.webp 354w,
+                ./images/portfolio/lab370.webp 370w,
+                ./images/portfolio/lab450.webp 450w,
+                    ./images/portfolio/lab354@2x.webp 708w,
+                    ./images/portfolio/lab370@2x.webp 740w,
+                    ./images/portfolio/lab450@2x.webp 900w" 
+                    type="image/webp"
+                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, (max-width: 480px) 100vw" />
+
+              <img class="image" srcset="
+                ./images/portfolio/lab354.jpg 354w,
+                ./images/portfolio/lab370.jpg 370w,
+                ./images/portfolio/lab450.jpg 450w,
+                    ./images/portfolio/lab354@2x.jpg 708w,
+                    ./images/portfolio/lab370@2x.jpg 740w,
+                    ./images/portfolio/lab450@2x.jpg 900w"  
+                    src="./img/portfolio/lab354.jpg" alt="Веб-сайт"
+                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, (max-width: 480px) 100vw" />
+            </picture>
                   <div class="portfolio__card-description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -254,11 +446,27 @@
             <li class="portfolio__project-set">
               <a class="portfolio__card" href="">
                 <div class="portfolio__wrapper">
-                  <img
-                    src="./images/growing-bisines.jpg"
-                    alt="app growing bisines"
-                    width="370"
-                  />
+                  <picture>
+              <source srcset="
+                ./images/portfolio/grow354.webp 354w,
+                ./images/portfolio/grow370.webp 370w,
+                ./images/portfolio/grow450.webp 450w,
+                    ./images/portfolio/grow354@2x.webp 708w,
+                    ./images/portfolio/grow370@2x.webp 740w,
+                    ./images/portfolio/grow450@2x.webp 900w" 
+                    type="image/webp"
+                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, (max-width: 480px) 100vw" />
+
+              <img class="image" srcset="
+                ./images/portfolio/grow354.jpg 354w,
+                ./images/portfolio/grow370.jpg 370w,
+                ./images/portfolio/grow450.jpg 450w,
+                    ./images/portfolio/grow354@2x.jpg 708w,
+                    ./images/portfolio/grow370@2x.jpg 740w,
+                    ./images/portfolio/grow450@2x.jpg 900w"  
+                    src="./img/portfolio/grow354.jpg" alt="Веб-сайт"
+                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, (max-width: 480px) 100vw" />
+            </picture>
                   <div class="portfolio__card-description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -360,5 +568,7 @@
         </form>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

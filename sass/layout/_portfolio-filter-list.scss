@@ -1,8 +1,14 @@
 .portfolio__filter-menu {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  column-gap: 8px;
+  justify-content: left;
   padding-bottom: 50px;
   margin: 0;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }
 
 .portfolio__filter-list:not(:last-child) {

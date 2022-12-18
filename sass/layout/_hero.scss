@@ -1,17 +1,101 @@
 .hero {
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/hero-bg-image.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-
-  margin-top: 0;
-  padding-bottom: 200px;
-  padding-top: 200px;
   text-align: center;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  height: 400px;
+  margin: 0 auto;
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    height: 600px;
+  }
+  @media screen and (max-width: 480px) {
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(rgba(47, 48, 58, 0.4)),
+        to(rgba(47, 48, 58, 0.4))
+      ),
+      url("../images/hero/banner-480.jpg") no-repeat center/cover;
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url("../images/hero/banner-480.jpg") no-repeat center/cover;
+  }
+
+  @media screen and (max-width: 480px) and (min-device-pixel-ratio: 2),
+    screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2),
+    screen and (max-width: 480px) and (min-resolution: 192dpi),
+    screen and (max-width: 480px) and (min-resolution: 2dppx) {
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(rgba(47, 48, 58, 0.4)),
+        to(rgba(47, 48, 58, 0.4))
+      ),
+      url("../images/hero/banner-480@2x.jpg") no-repeat center/cover, #c4c4c4;
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url("../images/hero/banner-480@2x.jpg") no-repeat center/cover, #c4c4c4;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(rgba(47, 48, 58, 0.4)),
+        to(rgba(47, 48, 58, 0.4))
+      ),
+      url("../images/hero/banner-768.jpg") no-repeat center/cover, #c4c4c4;
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url("../images/hero/banner-768.jpg") no-repeat center/cover, #c4c4c4;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 768px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 481px) and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-width: 481px) and (max-width: 768px) and (min-resolution: 192dpi),
+    screen and (min-width: 481px) and (max-width: 768px) and (min-resolution: 2dppx) {
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(rgba(47, 48, 58, 0.4)),
+        to(rgba(47, 48, 58, 0.4))
+      ),
+      url("../images/hero/banner-768@2x.jpg") no-repeat center/cover, #c4c4c4;
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url("../images/hero/banner-768@2x.jpg") no-repeat center/cover, #c4c4c4;
+  }
+
+  @media screen and (min-width: 769px) {
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(rgba(47, 48, 58, 0.4)),
+        to(rgba(47, 48, 58, 0.4))
+      ),
+      url("../images/hero/banner-1200.jpg") no-repeat center/cover, #c4c4c4;
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url("../images/hero/banner-1200.jpg") no-repeat center/cover, #c4c4c4;
+  }
+
+  @media screen and (min-width: 769px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-width: 769px) and (min-resolution: 192dpi),
+    screen and (min-width: 769px) and (min-resolution: 2dppx) {
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(rgba(47, 48, 58, 0.4)),
+        to(rgba(47, 48, 58, 0.4))
+      ),
+      url("../images/hero/banner-1200@2x.jpg") no-repeat center/cover, #c4c4c4;
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url("../images/hero/banner-1200@2x.jpg") no-repeat center/cover, #c4c4c4;
+  }
 }
 .hero__hero-title {
   color: $primary-bg-color;

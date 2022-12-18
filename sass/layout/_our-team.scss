@@ -5,14 +5,11 @@
 .our-team__workers {
   padding-left: 0px;
   margin: 0px;
-  @media screen and (max-width: 767px) {
-    display: block;
-  }
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-  }
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 .our-team__icon-members {
   display: flex;
@@ -36,6 +33,20 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 30px;
     font-size: 28px;
+  }
+}
+.our-team__image {
+  @media screen and (max-width: 767px) {
+    max-width: 450px;
+    max-height: 622p;
+  }
+  @media screen and (max-width: 1199px) {
+    max-width: 354px;
+    max-height: 374px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 270px;
+    max-height: 260px;
   }
 }
 .our-team__member-link {

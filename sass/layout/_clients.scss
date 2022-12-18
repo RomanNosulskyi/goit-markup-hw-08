@@ -13,7 +13,13 @@
     flex-wrap: wrap;
     gap: 30px;
   }
-  @media screen and (min-width: 768px) and (max-widht: 1199px) {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  @media screen and (max-widht: 1199px) {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
