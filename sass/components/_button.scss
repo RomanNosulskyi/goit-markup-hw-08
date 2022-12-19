@@ -1,6 +1,15 @@
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
 .button {
   text-transform: none;
 }
+
 .btn {
   display: inline;
   margin-left: auto;
@@ -76,9 +85,14 @@
   height: 40px;
   margin-left: auto;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 .menu-button--toggle {
-  display: block;
+  display: inline-block;
   margin-top: 10px;
   margin-bottom: 10px;
+  margin-left: auto;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

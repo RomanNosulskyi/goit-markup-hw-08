@@ -17,9 +17,14 @@
   </head>
   <body>
     <header class="page-header">
-    <!-- НАВИГАЦИЯ САЙТУ -->
+
+    <!-- НАВИГАЦІЯ САЙТУ -->
+
     <div class="container  page-header__container">
-      <a href="./index.html" lang="en" class="logo page-header__logo"><span class="logo--accent">Web</span>Studio</a>
+      <a href="" class="page-header__logo logo" lang="en"
+          ><span class="page-header__logo-web">Web</span>
+          <span class="page-header__logo-studio">Studio</span>
+          </a>
 
       <div class="box page-header__box">
         <nav class="nav page-header__nav">
@@ -35,12 +40,14 @@
             </li>
           </ul>
         </nav>
+
         <!--КОНТАКТИ-->
+
         <ul class="page-header__address-list firm-address__list">
           <li class="page-header__address-item firm-address__item">
-            <a href="mailto:info@devstudio.com" lang="en" class="page-header-address__link firm-address__link">
-              <div class="envelope">
-                <svg class="address-icon">
+            <a href="mailto:info@devstudio.com" lang="en" class="page-header__address-link firm-address__link">
+              <div class="header__icons">
+                <svg class="envelope" width="16" height="12">
                   <use href="./images/symbol-defs.svg#icon-email"></use>
                 </svg>
               </div>
@@ -49,9 +56,9 @@
             </a>
           </li>
           <li class="page-header__address-item firm-address__item">
-            <a href="tel:+380961111111" class="page-header-address__link firm-address__link">
-              <div class="smartphone">
-                <svg class="address-icon">
+            <a href="tel:+380961111111" class="page-header__address-link firm-address__link">
+              <div class="telephone">
+                <svg class="telephone" width="10" height="16">
                   <use href="./images/symbol-defs.svg#icon-telephone"></use>
                 </svg>
               </div>
@@ -73,8 +80,8 @@
 
       <div class="menu-container  page-header__menu-container js-menu-container" id="mobile-menu">
           <div class="mobile-container__modal">
-            <button class="menu-button menu-button--toggle page-header__menu-button js-close-menu">
-              <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+            <button class="menu-button--toggle page-header__menu-button js-close-menu">
+              <svg width="24" height="16" aria-label="Перемикач мобільного меню">
                 <use class="icon-close" href="./images/symbol-defs.svg#icon-close"></use>
               </svg>
             </button>
@@ -85,14 +92,16 @@
                     <a href="./index.html" class="nav__studio">Студія</a>
                   </li>
                   <li class="mobile-nav__item">
-                    <a href="./portfolio.html" class="nav__portfolio">Портфоліо</a>
+                    <a href="./portfolio.html" class="nav__studio">Портфоліо</a>
                   </li>
                   <li class="mobile-nav__item">
-                    <a href="#" class="nav__contacts">Контакти</a>
+                    <a href="#" class="nav__studio">Контакти</a>
                   </li>
                 </ul>
               </nav>
+
               <!--КОНТАКТИ-->
+
               <ul class="mobile-address__list">
                 <li class="mobile-address__item">
                   <a href="mailto:info@devstudio.com" lang="en" class="mobile-address__link--mail">info@devstudio.com</a>
